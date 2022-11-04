@@ -1,0 +1,57 @@
+.hero_section {
+    background-image: url('/public/assets/homem_sorte_2.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.hero_section_box {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero_section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 50%;
+}
+
+.hero_section_content_title {
+    font-size: 10vh;
+    line-height: 10vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #930089;
+    text-shadow: 0 0 10px #b1b1b1;
+}
+
+.hero_section_content_text {
+    font-size: 3vh;
+    font-weight: 600;
+    color: #535353;
+}
+
+.hero_section_content_button {
+    width: 35%;
+    padding: 1rem 0;
+    border-radius: 25px;
+    border: none;
+    background-color: #005f9a;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #a3a3a3;
+    transition: background-color 0.5s;
+}
+
+.hero_section_content_button:hover {
+    background-color:  #930089;
+    box-shadow: 0 0 10px #3f3f3f;
+    color: #fff;
+}

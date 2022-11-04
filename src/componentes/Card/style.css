@@ -1,0 +1,20 @@
+.card {
+    width: 250px;
+    height: 300px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img_card {
+    width: 50%;
+    filter: #fff !important;
+}
+
+.title_card {
+    font-size: 4vh;
+}

@@ -1,0 +1,34 @@
+.about_section {
+    background-image: url('../../../public/assets/bg_destaque.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 3rem;
+    text-align: center;
+}
+
+.about_section_content_text {
+    text-align: center;
+}
+
+.content_text_title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8vh;
+    margin-bottom: 0.5rem;
+    color: #ffba25;
+}
+
+.content_text_paragraph {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.about_section_content_cards {
+    margin: 2rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

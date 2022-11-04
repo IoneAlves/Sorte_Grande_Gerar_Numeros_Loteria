@@ -1,0 +1,92 @@
+.myguess {
+    padding: 5rem 0;
+}
+
+
+.myguess_logo {
+    width: 50px;
+    margin-right: 0.5rem;
+}
+
+.myguess_logotipo {
+    width: 250px;
+}
+
+.myguess_logotipo_mega {
+    width: 280px;
+}
+
+.myguess_content{
+    text-align: center;
+}
+
+.myguess_content_title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8vh;
+    margin-bottom: 0.5rem;
+    color: #ffba25;
+}
+
+.myguess_card_area {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.myguess_card {
+    display: flex;
+    border-radius: 10px;
+    height: auto;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    justify-content: space-evenly;
+    box-shadow: 3px 3px 3px #c6c6c6;
+}
+
+.card_megasena {
+    border: 3px solid #1a9969;
+}
+
+.position_box_set {
+    position: relative;
+}
+
+.card_bet {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 6vh;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_lotofacil {
+    border: 3px solid #930089;
+    background-color: #fdfdfd;
+}
+
+.card_lotofacil:hover {
+    display: none;
+}
+
+.card_bet_lotofacil {
+    background-image: linear-gradient(to right top, #930089, #7b0073, #64005e, #4e004a, #390036);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+.myguess_content_text {
+    font-size: 3vh;
+    font-weight: bold;
+}

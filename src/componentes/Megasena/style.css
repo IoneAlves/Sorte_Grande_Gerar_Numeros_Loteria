@@ -1,0 +1,11 @@
+.color {
+    background-color: green;
+}
+span{
+    background-color: #209869;
+    padding: 0.5rem;
+    color: #fff;
+    margin: 0 0.5rem;
+    border: 1px solid #fff;
+    font-size: 2rem;
+}

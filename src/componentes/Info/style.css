@@ -1,0 +1,51 @@
+.info {
+    background-image: linear-gradient(to right, #00653c, #006b61, #006e89, #006da9, #0065b7);
+}
+
+.info_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.info_box_text, .info_box_img{
+    width: 50%;
+}
+
+.info_box_text {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info_box_title {
+    color: #88e5d6 !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8vh;
+    margin: 2rem 0;
+    line-height: 100%;
+}
+
+.img_content {
+    width: 35%;
+}
+
+.info_box_description {
+    color: #fff;
+    font-size: 3vh;
+}
+
+.btnCaixa {
+    width: 50%;
+    padding: 0.75rem 0;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to bottom,#fda917 0%,#fc8f01 100%);
+    box-shadow: 0 2px 0 rgb(31 42 71 / 10%);
+    color: #fff;
+    text-transform: lowercase;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem 0;
+}
