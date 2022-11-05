@@ -1,6 +1,7 @@
 {
   "name": "sorte_grande",
   "version": "0.1.0",
+  "homepage": "https://ionealves.github.io/Sorte_Grande_Gerar_Numeros_Loteria/", 
   "private": true,
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist",
