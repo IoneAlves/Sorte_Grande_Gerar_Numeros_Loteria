@@ -4,7 +4,7 @@ import './style.css';
 function BotaoVoltar () {
     return (
         <div>
-            <a href='/'>Voltar</a>
+            <a href='/'><div className='btnVoltar'>Voltar</div></a>            
         </div>
     );
 };

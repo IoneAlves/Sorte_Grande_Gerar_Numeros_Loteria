@@ -1,16 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
 import Header from '../Header'
+import Footer from '../Footer';
 import './style.css';
 import BotaoVoltar from '../BotaoVoltar';
 
 function Lotofacil () {
+  
+    const [Num , NumUp] = useState('');
 
-    const [Num , NumUp] = useState(1);
-
-    function RandomNum () {
-        let numbers = [];
+    function RandomNumLoto () {
         let number = 0;
+        let numbers = [];
+        let numbersElements = [];
         let i = 0;
 
         do {
@@ -19,41 +21,43 @@ function Lotofacil () {
                 numbers.push(number);
                 i++;   
             }  
-        } while (i < 20);
+        } while (i < 15);
+        
+        numbers.sort(function(a, b){return a-b});
 
-        NumUp(numbers);
+        numbers.forEach((n)=>{
+            numbersElements.push(<div className='luckyNumberLoto'>{n}</div>)
+        })
+
+        NumUp(numbersElements);
     };
+
+    function clearArea(){
+        NumUp('');
+    }
     
     return (
-        <div className='color'>
+        <div className='lotofacil_page'>
             <Header />
-            <h1>Esssa á a página da Lotofácil</h1>
-            <div>
-                <span>{ Num[0] }</span>
-                <span>{ Num[1] }</span>
-                <span>{ Num[2] }</span>
-                <span>{ Num[3] }</span>
-                <span>{ Num[4] }</span>
-                <span>{ Num[5] }</span>
-                <span>{ Num[6] }</span>
-                <span>{ Num[7] }</span>
-                <span>{ Num[8] }</span>
-                <span>{ Num[9] }</span>
-                <span>{ Num[10] }</span>
-                <span>{ Num[11] }</span>
-                <span>{ Num[12] }</span>
-                <span>{ Num[13] }</span>
-                <span>{ Num[14] }</span>
-                <span>{ Num[15] }</span>
-                <span>{ Num[16] }</span>
-                <span>{ Num[17] }</span>
-                <span>{ Num[18] }</span>
-                <span>{ Num[19] }</span>
+            <div className='lotofacil_main container'>
+                <div>
+                    <div>
+                        <img className='icon_logo' src={'assets/icon_lotofacil.png'}></img>
+                        <img className='mega_logo' src={'assets/lotoCA.png'}></img>
+                    </div>
+                    <h2 className='lotofacil_title'>Nunca foi tão fácil apostar! Clique me "sortear", anote seus números e boa sorte!</h2>
+                    <div className='luckyNumbers'>
+                        { Num }
+                    </div>
+                    <button className='btnClear' onClick={ clearArea }>limpar</button>
+                    <button className='btnGenerator' onClick={ RandomNumLoto }>sorter</button>
+                    <BotaoVoltar />
+                </div>
             </div>
-            <button onClick={ RandomNum }></button>
-            <BotaoVoltar />
+            <Footer />
         </div>
     );
 };
 
 export default Lotofacil;
+

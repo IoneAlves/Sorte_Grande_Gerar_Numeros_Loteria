@@ -2,7 +2,6 @@
     padding: 5rem 0;
 }
 
-
 .myguess_logo {
     width: 50px;
     margin-right: 0.5rem;
@@ -22,7 +21,8 @@
 
 .myguess_content_title {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 8vh;
+    font-size: 8vmin;
+    padding: 0 2rem;
     margin-bottom: 0.5rem;
     color: #ffba25;
 }
@@ -73,17 +73,28 @@
     background-color: #fdfdfd;
 }
 
-.card_lotofacil:hover {
-    display: none;
-}
 
-.card_bet_lotofacil {
-    background-image: linear-gradient(to right top, #930089, #7b0073, #64005e, #4e004a, #390036);
+.card_bet_lotofacil, .card_bet_megasena {
     color: #fff;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.card_bet_lotofacil {
+    background-image: linear-gradient(to right top, #930089, #7b0073, #64005e, #4e004a, #390036);
+}
+
+.card_bet_megasena {
+    background-image: linear-gradient(to right top, #209869, #198658, #117448, #086339, #00522a);
+}
+
+
+.card_bet_lotofacil:hover, .card_bet_megasena:hover {
+    opacity: 1;
 }
 
 .myguess_content_text {

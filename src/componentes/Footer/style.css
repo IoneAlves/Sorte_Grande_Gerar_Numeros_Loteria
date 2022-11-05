@@ -1,3 +1,24 @@
 footer {
-    background-color:  #9bb05a;;
+    width: 100%;
+    background-color:  #9bb05a;
+    color: #fff;
+}
+
+.footer_content {
+    padding: 1rem 0;
+    font-size: 2.5vmin;
+    text-align: center;
+}
+
+.footer_content_about {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+.footer_content_img {
+    width: 250px;
+}
+
+.footer_content_warning {
+    color:  #4e582d;
+    font-weight: bold;
 }

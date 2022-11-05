@@ -1,16 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
 import Header from '../Header'
+import Footer from '../Footer'
 import './style.css'
 import BotaoVoltar from '../BotaoVoltar';
 
 function Megasena () {
 
-    const [Num , NumUp] = useState(1);
+    const [Num , NumUp] = useState('');
 
-    function RandomNum () {
-        let numbers = [];
+    function RandomNumMega () {
         let number = 0;
+        let numbers = [];
+        let numbersElements = [];
         let i = 0;
 
         do {
@@ -21,24 +23,38 @@ function Megasena () {
             }  
         } while (i < 6);
 
-        NumUp(numbers);
+        numbers.sort(function(a, b){return a-b});
+
+        numbers.forEach((n)=>{
+            numbersElements.push(<div className='luckyNumber'>{n}</div>)
+        })
+
+        NumUp(numbersElements);
     };
+
+    function clearArea(){
+        NumUp('');
+    }
     
     return (
-        <div className='color'>
+        <div className='mega_sena_page'>
             <Header />
-            <h1>Essa é a página da Mega-Sena</h1>
-            <div>
-                <span>{ Num[0] }</span>
-                <span>{ Num[1] }</span>
-                <span>{ Num[2] }</span>
-                <span>{ Num[3] }</span>
-                <span>{ Num[4] }</span>
-                <span>{ Num[5] }</span>
+            <div className='mega_sena_main container'>
+                <div>
+                    <div>
+                        <img className='icon_logo' src={'assets/icon_mega.png'}></img>
+                        <img className='mega_logo' src={'assets/megaCA.png'}></img>
+                    </div>
+                    <h2 className='mega_sena_title'>Nunca foi tão fácil apostar! Clique me "sortear", anote seus números e boa sorte!</h2>
+                    <div className='luckyNumbers'>
+                        { Num }
+                    </div>
+                    <button className='btnClear' onClick={ clearArea }>novo sorteio</button>
+                    <button className='btnGenerator' onClick={ RandomNumMega }>sorter</button>
+                    <BotaoVoltar />
+                </div>
             </div>
-
-            <button onClick={ RandomNum }></button>
-            <BotaoVoltar />
+            <Footer />
         </div>
     );
 };

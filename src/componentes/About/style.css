@@ -4,7 +4,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    padding: 5rem 3rem;
+    padding: 3rem 1.5rem;
     text-align: center;
 }
 
@@ -26,9 +26,10 @@
 
 .about_section_content_cards {
     margin: 2rem 0;
+    text-align: center;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 5rem;
 }

@@ -1,11 +1,72 @@
-.color {
-    background-color: green;
+.mega_sena_page{
+    background-color: #fff;
+    text-align: center;
 }
-span{
+
+.mega_sena_container {
+    padding: 2rem 0;
+}
+    
+.mega_sena_page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mega_sena_main {
+    flex: 1;
+    padding: 3rem 0;
+}
+
+.mega_logo {
+    width: 250px;
+}
+.mega_sena_title{
+    margin: 1rem 0;
+}
+
+.luckyNumbers {
+    margin: 5rem 0;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.luckyNumber {
     background-color: #209869;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     padding: 0.5rem;
     color: #fff;
     margin: 0 0.5rem;
     border: 1px solid #fff;
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnGenerator, .btnClear {
+    width: 150px;
+    padding: 0.75rem 0;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 2px 0 rgb(31 42 71 / 10%);
+    color: #fff;
+    text-transform: lowercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.btnClear {
+    background: linear-gradient(to bottom,#3f90d3  0%,#0065b7  100%);
+}
+
+.btnGenerator {
+    background: linear-gradient(to bottom,#fda917 0%,#fc8f01 100%);
 }

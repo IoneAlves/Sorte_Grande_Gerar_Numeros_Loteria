@@ -8,8 +8,13 @@
     align-items: flex-end;
 }
 
-.info_box_text, .info_box_img{
-    width: 50%;
+.info_box_text {
+    width: 60%;
+    height: 100%;
+}
+
+.img_content {
+    width: 350px;
 }
 
 .info_box_text {
@@ -27,9 +32,6 @@
     line-height: 100%;
 }
 
-.img_content {
-    width: 35%;
-}
 
 .info_box_description {
     color: #fff;
@@ -48,4 +50,42 @@
     text-align: center;
     text-decoration: none;
     margin: 2rem 0;
+}
+
+.btnCaixa:hover {
+    background:  #1a9969;
+    box-shadow: 0 0 10px #3f3f3f;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .info_box{        
+        width: 100%;
+        text-align: center;   
+        background-image: url('/public/assets/homem_pensativo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+    }
+
+    .info_box_text{
+        padding: 0 2rem;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .img_content, .info_box_img{
+        display: none;
+    }
+
+    .info_box_text {
+        align-self: center;
+    }
+
+    .btnCaixa {
+      align-self: center;
+    }
+    
+
 }
