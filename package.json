@@ -2,8 +2,6 @@
   "name": "sorte_grande",
   "version": "0.1.0",
   "private": true,
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
